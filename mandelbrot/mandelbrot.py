@@ -1,3 +1,5 @@
+import time
+
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -31,6 +33,7 @@ mandelbrot_data = []
 
 # Schleifen über die Startwerte und Abarbeitung der
 # Iterationsvorschrift
+start = time.time()
 for ny in range(seitenlaenge):
     y = ymin+ny*Schrittweite
     for nx in range(seitenlaenge):
@@ -45,6 +48,8 @@ for ny in range(seitenlaenge):
         
    # Anhängen des neuen Farbwerts an die Liste
         mandelbrot_data.append(farbe)
+ende = time.time()
+print(ende-start)
 # Erstellung der Grafik
 plot(mandelbrot_data, seitenlaenge)
 #print(julia_daten)
