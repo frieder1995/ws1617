@@ -23,8 +23,8 @@ xmax = 1/zoom
 ymin = -1/zoom
 ymax = 1/zoom
 Schwellwert  = 2
-Max_Iteration = 75
-seitenlaenge = 500
+Max_Iteration = 2000
+seitenlaenge = 1024
 Schrittweite = (xmax-xmin)/seitenlaenge
 # diese Liste soll die erzeugten Daten enthalten 
 mandelbrot_data = []
